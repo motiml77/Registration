@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Registration</string>
     <string name="select_language">select Language</string>
+    <string name="somthing_went_wrong">somthing went wrong</string>
+    <string name="please_fill_in_all_fields">please fill in all fields</string>
+    <string name="wellcome_to_the_app">wellcome to the app</string>
+
+
 </resources>

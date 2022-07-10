@@ -66,7 +66,7 @@ public class LoginActivity extends AppCompatActivity {
                 task.getResult(ApiException.class);
                 navigateToSecondActivity();
             } catch (ApiException e) {
-                Toast.makeText(getApplicationContext(), "somthing went wrong", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), getString(R.string.somthing_went_wrong), Toast.LENGTH_SHORT).show();
             }
 
         }
@@ -84,9 +84,9 @@ public class LoginActivity extends AppCompatActivity {
         String password = editText2.getText().toString();
 
         if (password.isEmpty()||username.isEmpty())
-            Toast.makeText(LoginActivity.this, "please fill in all fields", Toast.LENGTH_SHORT).show();
+            Toast.makeText(LoginActivity.this,getString(R.string.please_fill_in_all_fields), Toast.LENGTH_SHORT).show();
             else
-            Toast.makeText(LoginActivity.this, "wellcome to the app", Toast.LENGTH_SHORT).show();
+            Toast.makeText(LoginActivity.this, getString(R.string.wellcome_to_the_app), Toast.LENGTH_SHORT).show();
 
     }
 }

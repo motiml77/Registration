@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">הרשמה</string>
+    <string name="select_language">בחר שפה</string>
+    <string name="somthing_went_wrong">ארעה תקלה</string>
+    <string name="please_fill_in_all_fields">אנא מלא את כל השדות</string>
+    <string name="wellcome_to_the_app">ברוך הבא לאפליקציה</string>
+</resources>
