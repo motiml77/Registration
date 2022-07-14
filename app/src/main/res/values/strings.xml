@@ -3,7 +3,15 @@
     <string name="select_language">select Language</string>
     <string name="somthing_went_wrong">somthing went wrong</string>
     <string name="please_fill_in_all_fields">please fill in all fields</string>
-    <string name="wellcome_to_the_app">wellcome to the app</string>
-
-
+    <string name="wellcome_to_the_app">Wellcome!</string>
+    <string name="email_feild">Email</string>
+    <string name="username_feild">User Name</string>
+    <string name="Register_button">Register</string>
+    <string name="alreadyHaveAccount">Already Have an Account?</string>
+    <string name="Logintext">Login</string>
+    <string name="forgotPassword">Forgot Password?</string>
+    <string name="Login_Google_Account">Login with your Google Account</string>
+    <string name="Password_feild">Password</string>
+    <string name="Sign_up">SignUp</string>
+    <string name="Dont_have_account">Dont have an Account?</string>
 </resources>

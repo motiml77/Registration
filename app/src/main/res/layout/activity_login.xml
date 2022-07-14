@@ -12,9 +12,9 @@
         android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
+        android:text="@string/Logintext"
         android:textColor="@color/colorWhite"
-        android:textSize="36sp"
+        android:textSize="48sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,7 +31,7 @@
         android:drawableLeft="@drawable/ic_person"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="Passwrd"
+        android:hint="@string/Password_feild"
         android:inputType="textPersonName"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
@@ -55,7 +55,7 @@
         android:drawableLeft="@drawable/ic_email"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="Email"
+        android:hint="@string/email_feild"
         android:inputType="textPersonName"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
@@ -73,7 +73,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Forgot Password?"
+        android:text="@string/forgotPassword"
         android:textColor="@color/colorWhite"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -87,7 +87,7 @@
         android:layout_marginTop="24dp"
         android:background="@drawable/btn_bg"
         android:onClick="displayToast"
-        android:text="Login"
+        android:text="@string/Logintext"
         app:layout_constraintEnd_toEndOf="@+id/inputPassword"
         app:layout_constraintStart_toStartOf="@+id/inputPassword"
         app:layout_constraintTop_toBottomOf="@+id/forgotPassword" />
@@ -108,14 +108,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Dont have an Account?"
+            android:text="@string/Dont_have_account"
             android:textColor="@color/colorWhite" />
 
         <TextView
             android:id="@+id/textViewSignUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="SignUp"
+            android:text="@string/Sign_up"
             android:textColor="@color/colorRed" />
 
     </LinearLayout>
@@ -139,14 +139,14 @@
         android:layout_height="50dp"
         android:layout_marginTop="58dp"
         android:shadowColor="#000000"
-        android:text="Login with your Google Account"
+        android:text="@string/Login_Google_Account"
         android:textColor="#F4F0F0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/google_btn"
-        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.006" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

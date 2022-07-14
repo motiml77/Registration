@@ -4,5 +4,15 @@
     <string name="select_language">בחר שפה</string>
     <string name="somthing_went_wrong">ארעה תקלה</string>
     <string name="please_fill_in_all_fields">אנא מלא את כל השדות</string>
-    <string name="wellcome_to_the_app">ברוך הבא לאפליקציה</string>
+    <string name="wellcome_to_the_app">ברוכים הבאים!</string>
+    <string name="email_feild">"אימייל "</string>
+    <string name="username_feild">שם משתמש</string>
+    <string name="Register_button">הרשמה</string>
+    <string name="alreadyHaveAccount">יש לך כבר משתמש?</string>
+    <string name="Logintext">"התחברות "</string>
+    <string name="forgotPassword">שכחת סיסמא?</string>
+    <string name="Login_Google_Account">"התחבר עם חשבון הגוגל שלך "</string>
+    <string name="Password_feild">סיסמא</string>
+    <string name="Dont_have_account">אין לך משתמש?</string>
+    <string name="Sign_up">הרשם</string>
 </resources>

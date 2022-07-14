@@ -12,14 +12,27 @@ import android.widget.Toast;
 
 public class RegisterActivity extends AppCompatActivity {
     Button backBtn;
+    Button btnAdd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+
+//        btnAdd = findViewById(R.id.btnRegister);
         backBtn=findViewById(R.id.btnRegister);
 
         TextView btn=findViewById(R.id.alreadyHaveAccount);
+
+        // button listeners for the add
+//        btnAdd.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//             Users user = new Users( )
+//            }
+//        });
+
+
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,12 +58,19 @@ public class RegisterActivity extends AppCompatActivity {
         EditText editText4 = (EditText) findViewById(R.id.inputConformPassword);
         String conformPassword = editText4.getText().toString();
 
+        Users user = new Users(email, username,password);
+
+
         if (username.isEmpty()||email.isEmpty()||password.isEmpty()||conformPassword.isEmpty())
             Toast.makeText(RegisterActivity.this, "Please fill in all fields",Toast.LENGTH_SHORT).show();
         else if ((password.compareTo(conformPassword))!=0)
             Toast.makeText(RegisterActivity.this, "Please fix the password",Toast.LENGTH_SHORT).show();
         else {
-            Toast.makeText(RegisterActivity.this, "Account Created!!", Toast.LENGTH_SHORT).show();
+
+            DataBase user1 = new DataBase(this);
+            boolean success= user1.addOne(user);
+
+           Toast.makeText(RegisterActivity.this, "Account Created!!", Toast.LENGTH_SHORT).show();
             finish();
             startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
         }

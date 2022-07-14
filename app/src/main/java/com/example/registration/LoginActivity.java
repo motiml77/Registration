@@ -1,22 +1,23 @@
 package com.example.registration;
 
 
-import androidx.annotation.Nullable;
 import  androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.PatternMatcher;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
+
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
-import com.google.android.gms.common.api.Api;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.Task;
 
@@ -79,12 +80,17 @@ public class LoginActivity extends AppCompatActivity {
     }
     public void displayToast(View v){
         EditText editText1 = (EditText) findViewById(R.id.inputUsername);
-        String username = editText1.getText().toString();
+        String mail = editText1.getText().toString();
         EditText editText2 = (EditText) findViewById(R.id.inputPassword);
         String password = editText2.getText().toString();
 
-        if (password.isEmpty()||username.isEmpty())
+
+        if (password.isEmpty()||mail.isEmpty())
             Toast.makeText(LoginActivity.this,getString(R.string.please_fill_in_all_fields), Toast.LENGTH_SHORT).show();
+
+        else if (!Patterns.EMAIL_ADDRESS.matcher(mail).matches()){
+            Toast.makeText(LoginActivity.this,getString(R.string.Dont_have_account), Toast.LENGTH_SHORT).show();
+        }
             else
             Toast.makeText(LoginActivity.this, getString(R.string.wellcome_to_the_app), Toast.LENGTH_SHORT).show();
 
