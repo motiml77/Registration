@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,26 +13,16 @@ import android.widget.Toast;
 
 public class RegisterActivity extends AppCompatActivity {
     Button backBtn;
-    Button btnAdd;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-//        btnAdd = findViewById(R.id.btnRegister);
         backBtn=findViewById(R.id.btnRegister);
 
         TextView btn=findViewById(R.id.alreadyHaveAccount);
-
-        // button listeners for the add
-//        btnAdd.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//             Users user = new Users( )
-//            }
-//        });
-
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,15 +53,19 @@ public class RegisterActivity extends AppCompatActivity {
 
 
         if (username.isEmpty()||email.isEmpty()||password.isEmpty()||conformPassword.isEmpty())
-            Toast.makeText(RegisterActivity.this, "Please fill in all fields",Toast.LENGTH_SHORT).show();
+            Toast.makeText(RegisterActivity.this,getString(R.string.please_fill_in_all_fields) ,Toast.LENGTH_SHORT).show();
         else if ((password.compareTo(conformPassword))!=0)
-            Toast.makeText(RegisterActivity.this, "Please fix the password",Toast.LENGTH_SHORT).show();
+            Toast.makeText(RegisterActivity.this, getString(R.string.password_mismatch),Toast.LENGTH_SHORT).show();
+        else if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+            Toast.makeText(RegisterActivity.this, getString(R.string.Invalid_mail), Toast.LENGTH_SHORT).show();
+        }
         else {
 
             DataBase user1 = new DataBase(this);
             boolean success= user1.addOne(user);
 
-           Toast.makeText(RegisterActivity.this, "Account Created!!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(RegisterActivity.this, getString(R.string.account_created), Toast.LENGTH_SHORT).show();
+
             finish();
             startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
         }

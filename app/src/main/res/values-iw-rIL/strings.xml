@@ -14,5 +14,8 @@
     <string name="Login_Google_Account">"התחבר עם חשבון הגוגל שלך "</string>
     <string name="Password_feild">סיסמא</string>
     <string name="Dont_have_account">אין לך משתמש?</string>
-    <string name="Sign_up">הרשם</string>
+    <string name="Sign_up">הרשם עכשיו</string>
+    <string name="password_mismatch">הסיסמאות לא תואמות</string>
+    <string name="Invalid_mail">הזן מייל תקין</string>
+    <string name="account_created">המשתמש נוצר!</string>
 </resources>

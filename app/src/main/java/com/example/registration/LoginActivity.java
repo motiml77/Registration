@@ -89,7 +89,7 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(LoginActivity.this,getString(R.string.please_fill_in_all_fields), Toast.LENGTH_SHORT).show();
 
         else if (!Patterns.EMAIL_ADDRESS.matcher(mail).matches()){
-            Toast.makeText(LoginActivity.this,getString(R.string.Dont_have_account), Toast.LENGTH_SHORT).show();
+            Toast.makeText(LoginActivity.this,getString(R.string.Invalid_mail), Toast.LENGTH_SHORT).show();
         }
             else
             Toast.makeText(LoginActivity.this, getString(R.string.wellcome_to_the_app), Toast.LENGTH_SHORT).show();

@@ -14,4 +14,7 @@
     <string name="Password_feild">Password</string>
     <string name="Sign_up">SignUp</string>
     <string name="Dont_have_account">Dont have an Account?</string>
+    <string name="password_mismatch">Password mismatch!</string>
+    <string name="Invalid_mail">Invalid mail!</string>
+    <string name="account_created">Account Created!</string>
 </resources>
