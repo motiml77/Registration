@@ -56,7 +56,7 @@
         android:layout_height="48dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:text="Sign Out"
+        android:text="@string/Sign_Out"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.025"

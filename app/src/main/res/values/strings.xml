@@ -17,4 +17,5 @@
     <string name="password_mismatch">Password mismatch!</string>
     <string name="Invalid_mail">Invalid mail!</string>
     <string name="account_created">Account Created!</string>
+    <string name="Sign_Out">Sign Out</string>
 </resources>

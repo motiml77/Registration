@@ -18,4 +18,5 @@
     <string name="password_mismatch">הסיסמאות לא תואמות</string>
     <string name="Invalid_mail">הזן מייל תקין</string>
     <string name="account_created">המשתמש נוצר!</string>
+    <string name="Sign_Out">התנתק</string>
 </resources>
